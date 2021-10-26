@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+}
+
+.box1 {
+  margin-left: 10vh;
+  margin-top: 10vh;
+}
+
+.box2 {
+  margin-left: 10vh;
+  transform: translateX(15vw);
+}
+
+.box3 {
+  margin-left: 10vh;
+  transform: translateX(30vw);
+}
+
+@media screen and (max-width: 600px) {
+  .box1 {
+    margin: auto;
+  }
+
+  .box2 {
+    margin: auto;
+    transform: none;
+  }
+
+  .box3 {
+    margin: auto;
+    transform: none;
+  }
+}
